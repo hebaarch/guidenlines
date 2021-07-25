@@ -24,19 +24,20 @@ import webbrowser
 download_model(model='bert-squad_1.1', dir='./models')
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 docs_path = os.path.join(BASE_DIR, "docs")
+
 print(docs_path)
 df = pdf_converter(directory_path = docs_path)
 
 print(df.head())
 
 pd.set_option('display.max_colwidth', -1)
+
+import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+models_path = os.path.join(BASE_DIR, "models")
 
-models = os.path.join(BASE_DIR, "models")
-
-cdqa_pipeline = QAPipeline(reader='models', max_df=1.0)
+cdqa_pipeline = QAPipeline(reader = models_path, max_df=1.0)
 
 cdqa_pipeline.fit_retriever(df=df)
 
