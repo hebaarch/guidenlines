@@ -37,7 +37,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 models_path = os.path.join(BASE_DIR, "models")
 
-cdqa_pipeline = QAPipeline(reader = models_path, max_df=1.0)
+cdqa_pipeline = QAPipeline(reader = models_path)
 
 cdqa_pipeline.fit_retriever(df=df)
 
