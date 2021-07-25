@@ -2,7 +2,7 @@ pyngrok
 fpdf
 cdqa
 streamlit  
-python == 3.6.0
+
 Flask==1.1.1
 flask_cors==3.0.8
 joblib==0.13.2
