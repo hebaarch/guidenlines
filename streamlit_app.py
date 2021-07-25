@@ -22,7 +22,7 @@ import webbrowser
 
 
 download_model(model='bert-squad_1.1', dir='./models')
-df = pdf_converter(directory_path='docs/FIRE AND LIFE SAFETY CODE_Page24.pdf')
+df = pdf_converter(directory_path="docs/FIRE AND LIFE SAFETY CODE_Page24.pdf")
 
 print(df.head())
 
