@@ -22,7 +22,7 @@ import webbrowser
 
 
 download_model(model='bert-squad_1.1', dir='./models')
-df = pdf_converter(directory_path='.guidenlines/docs/')
+df = pdf_converter(directory_path='./docs/')
 print(df.head())
 
 pd.set_option('display.max_colwidth', -1)
