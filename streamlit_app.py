@@ -32,7 +32,7 @@ df = pdf_converter(directory_path = docs_path)
 print(df.head())
 
 pd.set_option('display.max_colwidth', -1)
-df.head()
+
 cdqa_pipeline = QAPipeline(reader='./models/bert_qa.joblib', max_df=1.0)
 
 cdqa_pipeline.fit_retriever(df=df)
