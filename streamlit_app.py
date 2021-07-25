@@ -26,8 +26,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 docs_path = os.path.join(BASE_DIR, "docs")
-
-df = pdf_converter(directory_path = "docs_path")
+print(docs_path)
+df = pdf_converter(directory_path = docs_path)
 
 print(df.head())
 
