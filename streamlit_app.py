@@ -22,8 +22,12 @@ import webbrowser
 
 
 download_model(model='bert-squad_1.1', dir='./models')
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-df = pdf_converter(directory_path="guidenlines/docs/")
+docs_path = os.path.join(BASE_DIR, "docs")
+
+df = pdf_converter(directory_path = "docs_path")
 
 print(df.head())
 
