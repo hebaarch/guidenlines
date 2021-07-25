@@ -22,10 +22,8 @@ import webbrowser
 
 
 download_model(model='bert-squad_1.1', dir='./models')
-from pathlib import Path
-p = Path('.')
-[x for x in p.iterdir() if x.is_dir()]
-df = pdf_converter(directory_path="docs/FIRE AND LIFE SAFETY CODE_Page24.pdf")
+
+df = pdf_converter(directory_path="guidenlines/docs/")
 
 print(df.head())
 
