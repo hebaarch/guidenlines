@@ -31,7 +31,7 @@ df = pdf_converter(directory_path = docs_path)
 
 print(df.head())
 
-pd.set_option('display.max_colwidth', -1)
+
 
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
