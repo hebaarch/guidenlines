@@ -15,4 +15,5 @@ torch==1.2.0
 markdown==3.1.1
 tqdm==4.32.2
 wget==3.2
-
+install-jdk
+pandas==1.2.1
